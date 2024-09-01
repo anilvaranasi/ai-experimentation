@@ -112,7 +112,7 @@ async function getModel(type, temperature) {
       { temperature: temperature,
         openAIApiKey: 'EMPTY',
         modelName: 'mistralai/Mistral-7B-Instruct-v0.2' },
-      { baseURL: 'http://vllm.llm-hosting.svc.cluster.local:8000/v1' }
+      { baseURL: 'http://vllm.vllm.svc.cluster.local:8000/v1' }
     );
   };
   return model;
