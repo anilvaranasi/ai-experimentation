@@ -67,8 +67,10 @@ async function getModel(type, temperature) {
     // Connect to ollama endpoint
     const { Ollama } = await import("@langchain/community/llms/ollama");
     model = new Ollama({
-      baseUrl: "http://10.1.1.39:11434", // Default value
-      model: "mistral", // Default value
+      //baseUrl: "http://10.1.1.39:11434", // Default value
+      //model: "mistral", // Default value
+      baseUrl: "http://127.0.0.1:11434", // Default value
+      model: "mistral-7b-instruct-v0.1.Q5_K_M:latest", // Default value
     });
   };
 
